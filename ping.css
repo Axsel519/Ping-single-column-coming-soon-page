@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+
+    --Blue: hsl(223, 87%, 63%);
+    --PaleB-lue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+    --Font-size: 20px;
+
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: var(--Font-size);
+}
+
+h1, h2, h3 {
+    font-weight: 200; /* Bold headings */
+    color: var(--Gray);
+}
+
+p {
+    font-weight: 300;
+    color: var(--Light-Red);
+    font-size: 1vw;
+    margin-right: 8vw;
+    margin-top: 1vh;
+    position: absolute;
+    display: none;
+}
+
+strong {
+    font-weight: 700; /* Semi-bold for emphasis */
+    color: var(--Very-Dark-Blue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5vh 5vw;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-top: 5vh;
+    gap: 2rem;
+}
+
+input {
+    width: 28vw;
+    padding: 2vh 2vw;
+    border-radius: 5vw;
+    border: 2px solid var(--Gray);
+}
+
+.error-border {
+    border-color:var(--Light-Red);
+}
+
+
+.image img {
+    width: 45vw;
+    padding: 5vh 0vw;
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a {
+    padding-right: 4vw;
+    border: 1px solid var(--PaleB-lue);
+    border-radius: 50%;
+    color: var(--Blue);
+    margin-right: 5vw;
+    height: 8vh;
+    width: 2vw;
+    cursor: pointer;
+}
+
+i {
+    margin-right: -4vw;
+    margin-top: 2vh;
+}
+
+a:active{
+    background-color: var(--Blue);
+    color: white;
+}
+
+
+button.send {
+    width: 17vw;
+    padding: 2vh;
+    background-color: var(--Blue);
+    color: white;
+    border: 2px solid;
+    border-radius: 5vw;
+}
+
+button:active {
+    background-color: hsl(223deg 87% 63% / 59%);
+    cursor: pointer;
+}
+
+.succeed {
+    display: none;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20231226/pngtree-textured-backdrop-sky-blue-paper-with-a-beautifully-crumpled-appearance-image_13876126.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .succeed h1{
+  
+    padding-top: 40vh;
+  }
+
+@media (max-width: 576px) {
+    a {
+        width: 16vw;
+    }
+
+    i {
+        margin-top: 3vh;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 45vw;
+        max-width: 45vw;
+}
+button.send {
+    width: 45vw;
+    max-width: 45vw;
+}
+
+p {
+    font-size: 2vw;
+    margin-top: 1vh;
+}
+
+}
